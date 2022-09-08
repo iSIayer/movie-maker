@@ -10,7 +10,7 @@ const instanceURL = axios.create({
   },
 });
 // Trend Movies
-export const getTranding = async () => {
+export const getTrending = async () => {
   try {
     const response = await instanceURL.get('/trending/movie/day');
     const { data } = response;
